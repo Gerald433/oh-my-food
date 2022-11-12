@@ -1,0 +1,172 @@
+@import 'reset.css';
+
+
+
+
+@font-face {
+    font-family: 'Shrikhand-Regular';
+    src: url(./Font/Shrikhand-Regular.ttf) format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(./Font/Roboto-Black.ttf) format('truetype');
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(./Font/Roboto-Light.ttf) format('truetype');
+
+}
+
+
+
+/* Générales */
+
+
+.site{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    font-family: 'Roboto Light';
+
+}
+
+
+
+
+
+
+
+/* Utilitaires */
+
+.flex{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+/* Point par point */
+
+/* Logo */
+
+
+.header_logo{
+    font-size: 2px;
+}
+
+
+
+/* Barre de Recherche */
+
+
+.search{
+    background-color: #99E2D0;
+    justify-content: center;
+    align-items: center;
+    border-top: #ff79da solid 2px;
+    height: 50px;
+   
+}
+
+
+
+.formtext{
+    background-color: #99E2D0;
+    border: none;
+    font-family: 'Roboto Bold'
+}
+
+
+
+
+/* Titre H1 */
+
+.major_title{
+    width: 55%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-family: 'Roboto Bold'
+}
+
+
+
+/* Texte descriptif publicitaire */
+
+.description{
+    font-family: 'Roboto Light';
+    
+    text-align: center;
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+}
+
+/* Lien Explorer nos restaurants */
+
+.Explore{
+    background-color: #9356DC;
+    color: white;
+    font-family: 'Roboto black';
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 47%;
+    height: 40px;
+    padding: 11px 0 0 0;
+    border-radius: 21px;
+
+}
+
+.advertising{
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #99E2D0;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
