@@ -36,6 +36,59 @@
 
 
 
+
+/* .lds-dual-ring { 
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}*/
+
+/* .lds-dual-ring:after { 
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: rgb(196, 31, 31) transparent rgb(83, 5, 5) transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Générales */
 
 
@@ -46,6 +99,155 @@
     font-family: 'Roboto Light';
 
 }
+
+
+
+
+
+.loader {
+   
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    animation: disappear 0.3s 2.2s forwards,  zindex 0s 2.5s forwards;
+    
+    
+}
+
+.lettre {
+    color: blue;
+    font-size: 40px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        color: #9356DC;
+        text-shadow: 0 0 7px #9356DC;
+        overflow-y: hidden;
+    }
+
+    90% {
+        color: #EA72DB;
+        text-shadow: none;
+    }
+
+    100% {
+        color: #9356DC;
+        text-shadow: 0 0 7px yellow;
+    }
+}
+
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+@keyframes disappear {
+   
+    100%{ 
+        opacity: 0;
+        
+        
+    }
+}
+@keyframes zindex {
+    100%{
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,7 +326,7 @@
     background-color: #EAEAEA;
     justify-content: center;
     align-items: center;
-    border-top: #ff79da solid 2px;
+    border-top: #cecece solid 2px;
     height: 50px;
    
 }
@@ -170,7 +372,9 @@
 /* Lien Explorer nos restaurants */
 
 .Explore{
-    background-color: #9356DC;
+    
+    background-image: linear-gradient(to top left, #9356DC 58%, #EA72DB );
+    box-shadow: 5px 5px 5px 0px #9356DC;
     color: white;
     font-family: 'Roboto Regular';
     text-align: center;
@@ -186,11 +390,16 @@
 
 }
 
+.Explore:hover{
+filter: brightness(1.15);
+box-shadow: 5px 5px 20px#9356DC;
+}
+
 .advertising{
     flex-direction: column;
     justify-content: space-between;
     background-color: #F7F7F7;
-    height: 200px;
+    min-height: 200px;
     
 }
 
@@ -212,32 +421,28 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow: 2px 4px 2px #eaeaea;
-
-}
-
-
-.part_one, .part_2, .part_3{
-    position: relative;
-    
+ 
 
 
-
-}
-
-
-.functioning_part{
-    /* position: relative; */
 }
 
 .functionning_icon1, .functionning_icon2, .functionning_icon3{
-    position: absolute;
-    top: 18px;
-    left: 18px;
+
+    margin-left: -37px;
+    right: 1px;
 }
+
+
+
 
 
 .stage_flex1:hover{
     background-color:#f5EDFF ;
+
+}
+
+.stage_flex1:hover .decoration {
+    color: #9356DC;
 
 }
 
@@ -269,12 +474,16 @@
     background-color: #99E2D0;
     font-size: 10px;
     width: 22%;
+    min-width: 60px;
+    max-width: 100px;
     text-align: center;
     padding: 4px 0 4px 0;
-    font-family: 'Roboto light';
+    font-family: 'Roboto Bold';
+    color: #008766;
     position: absolute;
     top: 7px;
     right: 8px;
+    border-radius: 3px;
 }
 
 
@@ -307,10 +516,10 @@
 }
 
 .heart{
-color: #9356DC;
-position: absolute;
-right: 12px;
-top: 171px;
+    color: #9356DC;
+    position: absolute;
+    right: 12px;
+    top: 171px;
 }
 
 .heart:hover{
@@ -375,7 +584,141 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 247px){
+
+    .lettre {
+            color: blue;
+            font-size: 10px;
+            letter-spacing: 3px;
+            margin-bottom: 150px;
+            animation: flash 1.2s linear infinite;
+        }
+
+    .header_logo {
+            width: 100px;
+        }
+    
+        .formtext {
+            font-size: 10px;
+            width: 70%;
+        }
+    
+        .major_title {
+            font-size: 16px;
+        }
+    
+        .description {
+            font-size: 9px;
+        }
+    
+        .Explore {
+            max-width: 200px;
+            font-size: 8px;
+        }
+    
+        .functioning_title,
+        .restaurant_title {
+            font-size: 15px;
+        }
+    
+        .functioning-stage {
+            font-size: 10px;
+        }
+    
+    
+    
+    
+        .icon_fa {
+            font-size: large;
+        }
+    
+        .picture {
+            height: 101px;
+        }
+    
+        .stage_flex1 {
+            background-color: #F7F7F7;
+            border-radius: 25px;
+            height: 50px;
+            justify-content: space-between;
+            width: 85%;
+            max-width: 400px;
+            /* padding: 0 41px 0 28px; */
+            align-items: center;
+            margin-top: 15px;
+            font-family: 'Roboto Bold';
+            font-size: 12px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 2px 4px 2px #eaeaea;
+            gap: 20px;
+    
+        }
+    
+        .heart {
+            top: 128px;
+            right: 8px;
+        }
+    
+        .link_card {
+            font-size: 11px;
+        }
+    
+        .town_restaurant {
+            font-size: 9px;
+        }
+    
+        /* FOOTER */
+    
+        .footer_logo {
+            width: 80px;
+        }
+    
+        .foot_link,
+        .foot_link2 {
+            font-size: 8px;
+        }
+}
+
+
+
+@media screen and (min-width: 248px){
+    .lettre {
+            color: blue;
+            font-size: 12px;
+            letter-spacing: 3px;
+            margin-bottom: 150px;
+            animation: flash 1.2s linear infinite;
+        }
+}
+
+
+
+
+
 @media screen and (min-width: 400px){
+
+.lettre {
+        color: blue;
+        font-size: 30px;
+        letter-spacing: 12px;
+        margin-bottom: 150px;
+        animation: flash 1.2s linear infinite;
+    }
+
+
+
 
 .header_logo {
     width: 300px;
@@ -390,7 +733,7 @@ footer{
     font-size: 25px;
 }
 .description{
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .Explore{
@@ -403,15 +746,9 @@ footer{
 }
 
 .functioning-stage{
-    font-size: 15px;
+    font-size: 16px;
 }
 
-.functionning_icon1, .functionning_icon2, .functionning_icon3{
-    font-size: 10px;
-    position: absolute;
-    top: 18px;
-    left: 18px;
-}
 
 
 
@@ -427,7 +764,7 @@ footer{
     background-color: #F7F7F7;
     border-radius: 25px;
     height: 50px;
-    justify-content: center;
+    justify-content: space-between;
     width: 85%;
     max-width: 400px;
     /* padding: 0 41px 0 28px; */
@@ -440,6 +777,11 @@ footer{
     box-shadow: 2px 4px 2px #eaeaea;
     gap: 20px;
 
+}
+
+.heart{
+    top: 269px;
+    right: 12px;
 }
 
 .link_card{
@@ -462,28 +804,75 @@ footer{
 
 
 }
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 600px){
+
+
+
+
+
+
     .picture {
         height: 350px;
+    }
+
+    .heart {
+        top: 375px;
+        right: 12px;
     }
     
     .functionning_icon1,
     .functionning_icon2,
     .functionning_icon3 {
         font-size: 10px;
-        position: absolute;
-        top: 18px;
-        left: 93px;
+        
     }
 
     .formtext{
         width: 19%;
     }
 
+    .functioning_title,
+    .restaurant_title {
+        font-size: 23px;
+    }
+
+    .link_card{
+        font-size: 18px;
+    }
+
+    .town_restaurant{
+        font-size: 16px;
+    }
 
 }
 
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 900px) {
+
+
+
+
+    .heart {
+        top: 472px;
+        right: 12px;
+    }
 
     .process{
         display: flex;
@@ -506,23 +895,47 @@ footer{
         justify-content: space-around;
     }
 
+    .restaurant_identity{
+        width: 100%;
+        
+    }
+
+
     .restaurant_list{
+      gap: 20px;
+      flex-direction: column;
       
-        gap: 50px;
+        
        
     }
+
+    .list_head{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+    .list_foot{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+
+
 
     .functionning_icon1,
     .functionning_icon2,
     .functionning_icon3 {
         font-size: 10px;
-        position: absolute;
+      
         top: 32px;
         left: -5px;
     }
 
     .formtext {
-        width: 10%;
+        width: 12%;
     }
 
 

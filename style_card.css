@@ -1,6 +1,16 @@
 @import 'reset.css';
 
+.slide {
+    width: 40px;
+    height: 55px;
+    background-color: #8EDECE;
+    color: #8EDECE;
+    margin: 0 -40px 0 0;
+    transition-duration: 1s;
+    text-align: center;
 
+
+}
 
 
 @font-face {
@@ -134,7 +144,8 @@
 .heart{
     position: absolute;
     top: 29px;
-    left: 238px;
+    /* left: 238px; */
+    right: 20px;
 }
 
 
@@ -152,35 +163,101 @@
     margin-left: 10px;
 }
 
-.introduction{
-    background-color: #F7F7F7;
-    
-    box-shadow: 2px 2px #F1F1F1 ;
-   
-    
 
+
+.introduction{
+    background-color: #F7F7F7; 
+    box-shadow: 2px 2px #F1F1F1 ;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 0px;
+    animation: apparition 0.8s ease-in-out;
+   
+}
+
+
+@keyframes apparition {
+    0%{
+        padding-top: 40px;
+        
+    }
+    100%{
+        padding-top: 0px;
+        
+
+    }
+}
+
+
+.intro1,
+.intro2,
+.intro3 {
+    height: 55px;
+}
+
+
+
+.choice .slide{
+    margin-right: -40px;
+}
+
+
+
+
+
+
+
+.ok{
+
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    align-items: center;    
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+     transition-duration: 1s; 
     
 }
 
+
+
+
 .choice{
     background-color: white;
-    margin: 0 10px 0 10px;
-    padding: 10px 0 10px 10px;
+    /* margin: 0 10px 0 10px; */
+    padding: 0px 0 0px 10px;
     border-radius: 10px;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    transition-duration: 1s;
+
+
+}
+
+.choice:active .slide{
+margin: 0px;
+}
+
+.choice:active .ok{
+
+    transform: rotate(360deg);
 }
 
 
-.intro1, .intro2, .intro3{
-    position: relative;
+
+
+.component{
+    
+    flex-grow: 1;
 }
-
-
 
 .dish{
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-family: 'Roboto Bold';
+    color: black;
     text-decoration: none;
     font-size: 14px;
 }
@@ -188,20 +265,24 @@
 .seasoning{
     font-size: 11px;
     padding-top: 5px;
+    
+    height: 18px;
+   
+    
 }
 
 .price{
-    position: absolute;
+    padding-right: 25px;
     top: 31px;
-    
+    font-family: 'Roboto Bold';
     right: 20px;
-    font-weight: bolder;
     font-size: 12px;
 }
 
 .Explore {
-   background-color: white;
-    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+    box-shadow: 5px 5px 15px 0px #9356DC;
+    color: white;
     font-family: 'Roboto Regular';
     text-align: center;
     display: block;
@@ -217,40 +298,9 @@
 }
 
 .Explore:hover{
-    background-color: #9356DC;
-    color: white;
+    filter: brightness(1.75);
+    box-shadow: 5px 5px 20px #9356DC;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* FOOTER */
@@ -308,6 +358,28 @@ footer {
 
 
 
+
+
+@media screen and (max-width: 399px){
+
+.seasoning {
+        font-size: 11px;
+        padding-top: 5px;
+        max-width: 104px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+
+    }
+
+
+}
+
+
+
+
+
 @media screen and (min-width: 400px) {
     .header_logo {
         width: 300px;
@@ -319,7 +391,7 @@ footer {
 
     .heart{
         top: 32px;
-        left: 312px;
+        right: 34px;
         font-size: 20px;
     }
 
@@ -329,7 +401,7 @@ footer {
 
     .choice {
         margin: 0 10px 0 10px;
-        padding: 10px 0 10px 10px;
+        padding: 0px 0 0px 10px;
     }
 
     .dish {
@@ -342,6 +414,17 @@ footer {
 
     .seasoning {
         font-size: 14px;
+        padding-top: 5px;
+        max-width: 104px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        
+        
+            
+        
+        
+        }
     }
 
     .picture {
@@ -349,7 +432,7 @@ footer {
     }
 
     .Explore {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .footer_logo {
@@ -371,6 +454,7 @@ footer {
 
 
 
+
 @media screen and (min-width: 700px) {
     .header_logo {
             width: 350px;
@@ -387,14 +471,14 @@ footer {
 
         .heart {
             top: 33px;
-            right: 600px;
+            right: 90px;
             font-size: 20px;
         }
         
     
         .choice {
             margin: 0 50px 0 50px;
-            padding: 10px 0 10px 10px;
+            /* padding: 10px 0 10px 10px; */
         }
     
         .dish {
@@ -427,6 +511,9 @@ footer {
         }
 }
 
+
+
+
 @media screen and (min-width: 980px){
     .introduction{
         flex-direction: row;
@@ -443,7 +530,6 @@ footer {
     }
     
     .price {
-        position: absolute;
         top: 31px;
         right: 10px;
         font-weight: bolder;
