@@ -23,71 +23,16 @@
 
 
 
-
-
-
-
-
 @font-face {
     font-family: 'Roboto Light';
     src: url(./Font/Roboto-Light.ttf) format('truetype');
 
 }
 
-
-
-
-/* .lds-dual-ring { 
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-}*/
-
-/* .lds-dual-ring:after { 
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    border-color: rgb(196, 31, 31) transparent rgb(83, 5, 5) transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {
+    animation: noscroll 0s 2.5s forwards;
+    overflow: hidden;
+}
 
 /* Générales */
 
@@ -144,6 +89,21 @@
         text-shadow: 0 0 7px yellow;
     }
 }
+
+
+
+
+@keyframes noscroll{
+  
+
+
+
+    100%{
+        overflow: unset;
+    }
+}
+
+
 
 .lettre:nth-child(1) {
     animation-delay: 0.1s;
@@ -463,12 +423,16 @@ box-shadow: 5px 5px 20px#9356DC;
 }
 
 .restaurant_identity{
-   
+    
     position: relative;
     
        
 }
 
+.list_head, .list_foot{
+    flex-direction: column;
+    gap: 20px;
+}
 
 .new{
     background-color: #99E2D0;
@@ -509,6 +473,7 @@ box-shadow: 5px 5px 20px#9356DC;
 
 .picture{
     width: 100%;
+    min-width: 100px;
     height:150px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
@@ -856,7 +821,20 @@ footer{
 }
 
 
-
+@media screen and (min-width: 700px){
+    footer {
+            background-color: #353535;
+            color: white;
+            padding-top: 12px;
+            padding-left: 15px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+}
 
 
 
