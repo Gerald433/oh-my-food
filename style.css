@@ -477,7 +477,7 @@ box-shadow: 5px 5px 20px#9356DC;
     height:150px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-
+   
 }
 
 .heart{
@@ -485,10 +485,28 @@ box-shadow: 5px 5px 20px#9356DC;
     position: absolute;
     right: 12px;
     top: 171px;
+    
 }
 
 .heart:hover{
     background-color: #9356DC;
+   
+    background-clip: text;
+
+
+}
+
+.full_heart{
+    position: absolute;
+    top: 171px;
+    right: 12px;
+    opacity: 0;
+}
+
+.full_heart:focus{
+    opacity: 1;
+    color: #9356DC;
+    cursor: pointer;
 }
 
 .container{
@@ -635,7 +653,25 @@ footer{
             top: 128px;
             right: 8px;
         }
-    
+
+        .full_heart {
+            position: absolute;
+            top: 128px;
+            right: 8px;
+            opacity: 0;
+        }
+
+        .full_heart:focus {
+            opacity: 1;
+            color: #9356DC;
+            cursor: pointer;
+        }
+
+
+
+
+
+
         .link_card {
             font-size: 11px;
         }
@@ -749,6 +785,19 @@ footer{
     right: 12px;
 }
 
+.full_heart {
+    position: absolute;
+    top: 269px;
+    right: 12px;
+    opacity: 0;
+}
+
+.full_heart:focus {
+    opacity: 1;
+    color: #9356DC;
+    cursor: pointer;
+}
+
 .link_card{
     font-size: 16px;
 }
@@ -792,6 +841,19 @@ footer{
     .heart {
         top: 375px;
         right: 12px;
+    }
+
+    .full_heart {
+        position: absolute;
+        top: 375px;
+        right: 12px;
+        opacity: 0;
+    }
+
+    .full_heart:focus {
+        opacity: 1;
+        color: #9356DC;
+        cursor: pointer;
     }
     
     .functionning_icon1,
@@ -850,6 +912,19 @@ footer{
     .heart {
         top: 472px;
         right: 12px;
+    }
+
+    .full_heart {
+        position: absolute;
+        top: 472px;
+        right: 12px;
+        opacity: 0;
+    }
+
+    .full_heart:focus {
+        opacity: 1;
+        color: #9356DC;
+        cursor: pointer;
     }
 
     .process{

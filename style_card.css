@@ -192,7 +192,6 @@
 
 .introduction{
     background-color: #F7F7F7; 
-    box-shadow: 2px 2px #F1F1F1 ;
     flex-direction: column;
     gap: 10px;
   
@@ -269,15 +268,16 @@
 
 
 .ok{
-
-    width: 20px;
-    height: 20px;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
     margin: auto;
     align-items: center;    
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
      transition-duration: 1s; 
     
 }
@@ -288,12 +288,13 @@
 .choice{
     background-color: white;
     border-radius: 10px;
+    margin: 0 10px 0 10px;
     display: flex;
     overflow: hidden;
     transition-duration: 1s;
     animation: apparition 0.8s ease-in-out both;
     cursor: pointer;
-  
+    box-shadow: 2px 4px 2px #eaeaea;
 
 
 }
@@ -340,7 +341,7 @@ margin-right: 0px
     font-family: 'Roboto Bold';
     color: black;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     padding: 10px 0 0 0;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -348,7 +349,7 @@ margin-right: 0px
 }
 
 .seasoning{
-    font-size: 11px;
+    font-size: 12px;
     padding: 0 0 0 0;
     height: 30px;
    
@@ -357,7 +358,7 @@ margin-right: 0px
 
 .price{
     
-    padding-top: 32px;
+    padding-top: 29px;
     padding-right: 22px;
     top: 31px;
     font-family: 'Roboto Bold';
@@ -463,7 +464,7 @@ footer {
 @media screen and (max-width: 399px){
 
 .seasoning {
-        font-size: 11px;
+     
         padding-top: 5px;
         text-overflow: ellipsis;
         overflow: hidden;
