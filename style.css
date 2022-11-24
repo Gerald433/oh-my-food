@@ -49,10 +49,10 @@ body {
 
 
 
-.loader {
+/* .loader {
    
     height: 100%;
-    position: absolute;
+    position: fixed;
     inset: 0;
     background-color: #f7f7f7;
     display: flex;
@@ -62,15 +62,90 @@ body {
     animation: disappear 0.3s 2.2s forwards,  zindex 0s 2.5s forwards;
     
     
+} */
+
+.load{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    background-color: #f7f7f7;
+    animation: disappear 0.3s 2.2s forwards, zindex 0s 2.5s forwards;
 }
 
-.lettre {
+
+.loading{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    display: flex;
+    border: 8px solid #9356DC;
+    border-top-color: #EA72DB;
+    border-bottom-color: #EA72DB;
+    border-radius: 50%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    animation: spin 1s linear infinite,  disappear 0.3s 2.2s forwards, zindex 0s 2.5s forwards;
+}
+
+
+.load_text{
+    display: flex;
+    justify-content: center;
+    padding-top: 600px;
+    color: #9356DC;
+    font-family: 'Roboto-Regular';
+    font-size: 22px;    
+}
+
+
+@keyframes spin {
+
+    0%{
+        transform: rotate(0deg);
+        overflow-y: hidden;
+        
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disappear {
+
+    100% {
+        opacity: 0;
+
+
+    }
+}
+
+@keyframes zindex {
+    100% {
+        z-index: -1;
+    }
+}
+
+
+
+
+/* .lettre {
     color: blue;
     font-size: 40px;
     letter-spacing: 15px;
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
-}
+} */
 
 @keyframes flash {
     0% {
@@ -153,19 +228,6 @@ body {
     animation-delay: 1s;
 }
 
-@keyframes disappear {
-   
-    100%{ 
-        opacity: 0;
-        
-        
-    }
-}
-@keyframes zindex {
-    100%{
-        z-index: -1;
-    }
-}
 
 
 
@@ -326,7 +388,7 @@ body {
     text-align: center;
     font-size: 12px;
     padding: 0 30px 0 30px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 /* Lien Explorer nos restaurants */
@@ -342,13 +404,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    width: 53%;
-    padding: 10px 0 10px 0;
+    width: 66%;
+    padding: 13px 0 13px 0;
     border-radius: 21px;
-    font-size: 11px;
+    font-size: 14px;
     text-decoration: none;
 
 }
+
+
 
 .Explore:hover{
 filter: brightness(1.15);
@@ -425,7 +489,6 @@ box-shadow: 5px 5px 20px#9356DC;
 .restaurant_identity{
     
     position: relative;
-    
        
 }
 
@@ -458,6 +521,7 @@ box-shadow: 5px 5px 20px#9356DC;
     font-size: 13px;
     color: black;
    
+   
 }
 
 
@@ -465,9 +529,12 @@ box-shadow: 5px 5px 20px#9356DC;
 .town_restaurant{
     font-size: 12px;
     padding-top: 4px;
+    color: black;
 }
 
-
+.ununder {
+    text-decoration: none;
+}
 
 
 
@@ -488,10 +555,9 @@ box-shadow: 5px 5px 20px#9356DC;
     
 }
 
-.heart:hover{
+.heart_gestion:hover .heart{
     background-color: #9356DC;
-   
-    background-clip: text;
+
 
 
 }
@@ -503,16 +569,31 @@ box-shadow: 5px 5px 20px#9356DC;
     opacity: 0;
 }
 
-.full_heart:focus{
+.heart_gestion:hover .full_heart{
     opacity: 1;
-    color: #9356DC;
+    background: -webkit-linear-gradient(to top left, #9356DC 58%,#EA72DB);
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     cursor: pointer;
 }
+
+.heart_gestion{
+
+}
+
+.heart_gestion:hover {
+
+}
+
+
+
 
 .container{
     background-color: white;
     border-radius: 0 0 10px 10px;
     padding: 10px 0 10px 10px;
+    
 }
 
 
@@ -530,7 +611,7 @@ footer{
 
 .footer_logo{
     width: 68px;
-    filter: invert();
+    filter: invert(1);
 
 }
 

@@ -1,43 +1,5 @@
 @import 'reset.css';
 
-
-
-.titre{
-    color: blue;
-    font-size: 22px;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
     font-family: 'Shrikhand-Regular';
     src: url(./Font/Shrikhand-Regular.ttf) format('truetype');
@@ -245,7 +207,8 @@
 @keyframes apparition {
     0%{
         opacity: 0;
-        padding-top: 10px;
+        /* padding-top: 10px; */
+        transform: translateY(10px);
         
     
     }
@@ -278,7 +241,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-     transition-duration: 1s; 
+    transition-duration: 1s; 
+    color: #8EDECE
     
 }
 
@@ -316,7 +280,6 @@ margin-right: 0px
 
     min-width: 40px;
     background-color: #8EDECE;
-    color: #8EDECE;
     margin: 0 -40px 0 0;
     transition-duration: 1s;
     text-align: center;
@@ -406,7 +369,7 @@ footer {
 
 .footer_logo {
     width: 68px;
-    filter: invert();
+    filter: invert(1);
 
 }
 
@@ -504,7 +467,7 @@ footer {
     }
 
     .dish {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .price {
@@ -574,7 +537,7 @@ footer {
         }
     
         .dish {
-            font-size: 20px;
+            font-size: 22px;
         }
     
         .price {
@@ -631,7 +594,6 @@ footer {
        width: 32%;
        
         display: flex;
-        flex-direction: ;
         flex-wrap: nowrap;
         justify-content: center;
         /* border: solid black 1px; */
@@ -650,7 +612,7 @@ footer {
     }
 
     .dish {
-     font-size: 18px;
+     font-size: 22px;
     }
 
 
