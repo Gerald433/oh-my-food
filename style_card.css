@@ -135,6 +135,30 @@
     right: 20px;
 }
 
+.full_heart {
+    position: absolute;
+    top: 29px;
+    /* left: 238px; */
+    right: 20px;
+    background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+    
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    transform: scale(0);
+    transition: transform 2s;
+}
+
+.heart_gestion:hover .full_heart {
+    opacity: 1;
+    background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+    transform: scale(1);
+
+}
 
 .section_subtile{
     font-size: 14px;
@@ -161,43 +185,54 @@
 }
 
 
-.B {
+.A, .B, .C, .D, .E, .F, .G, .H, .I{
+animation: apparition 2s ease-in-out both;
+}
 
-    animation-delay: 0.1s;
+
+
+.A {
+
+    animation-delay: 0s;
+}
+
+.B {
+  
+    animation-delay: 0.3s;
  }
 .C {
-
-    animation-delay: 0.2s;
-
-}
-.D {
-
-    animation-delay: 0.3s;
-
-}
-.E {
- 
-    animation-delay: 0.4s;
-
-}
-.F {
-
-    animation-delay: 0.5s;
-
-}
-.G {
     
     animation-delay: 0.6s;
 
 }
+.D {
+
+    animation-delay: 0.9s;
+
+}
+.E {
+ 
+    animation-delay: 1.2s;
+
+}
+.F {
+
+    animation-delay: 1.5s;
+
+}
+.G {
+    
+    animation-delay: 1.8s;
+
+}
 .H {
     
-    animation-delay: 0.7s;
+    animation-delay: 2.1s;
 
 }
 .I {
    
-    animation-delay: 0.8s;
+    animation-delay: 2.4s;
     
 }
 
@@ -208,13 +243,14 @@
     0%{
         opacity: 0;
         /* padding-top: 10px; */
-        transform: translateY(10px);
+        transform: translateY(40px);
         
+    
     
     }
     100%{
         opacity: 1;
-        padding-top: 0px;
+       
         
 
     }
@@ -255,8 +291,7 @@
     margin: 0 10px 0 10px;
     display: flex;
     overflow: hidden;
-    transition-duration: 1s;
-    animation: apparition 0.8s ease-in-out both;
+  
     cursor: pointer;
     box-shadow: 2px 4px 2px #eaeaea;
 
@@ -413,8 +448,31 @@ footer {
     .heart{
         position: absolute;
         top: 50px;
-        left: 106px;
+        /* left: 106px; */
     }
+
+    .full_heart {
+        position: absolute;
+        top: 50px;
+            /* left: 106px; */
+        
+        transform: scale(0);
+        transition: transform 2s;
+    }
+
+    .heart_gestion:hover .full_heart {
+        opacity: 1;
+        background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+        transform: scale(1);
+
+    }
+
+
     .section_title{
         max-width: 200px;
     }
@@ -456,6 +514,30 @@ footer {
         right: 34px;
         font-size: 20px;
     }
+
+    .full_heart {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+        font-size: 20px;
+        transform: scale(0);
+        transition: transform 2s;
+    }
+
+    .heart_gestion:hover .full_heart {
+        opacity: 1;
+        background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+        transform: scale(1);
+
+    }
+
+
+
 
     .section_subtile {
         font-size: 19px;
@@ -530,6 +612,26 @@ footer {
             font-size: 20px;
         }
         
+        .full_heart {
+            position: absolute;
+            top: 33px;
+            right: 90px;
+            font-size: 20px;
+            transform: scale(0);
+            transition: transform 2s;
+        }
+
+        .heart_gestion:hover .full_heart {
+            opacity: 1;
+            background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            cursor: pointer;
+            transform: scale(1);
+
+        }
     
         .choice {
             margin: 0 50px 0 50px;

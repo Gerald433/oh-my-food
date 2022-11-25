@@ -555,36 +555,34 @@ box-shadow: 5px 5px 20px#9356DC;
     
 }
 
-.heart_gestion:hover .heart{
-    background-color: #9356DC;
-
-
-
-}
-
 .full_heart{
     position: absolute;
     top: 171px;
     right: 12px;
-    opacity: 0;
-}
 
-.heart_gestion:hover .full_heart{
-    opacity: 1;
-    background: -webkit-linear-gradient(to top left, #9356DC 58%,#EA72DB);
+    background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
     
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    cursor: pointer;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    
+    transform: scale(0);
+    transition: transform 2s;
 }
 
 .heart_gestion{
 
+    cursor: pointer;
 }
 
-.heart_gestion:hover {
+.heart_gestion:hover .full_heart{
 
+
+
+    transform: scale(1);
+    
 }
+
 
 
 
@@ -733,20 +731,16 @@ footer{
         .heart {
             top: 128px;
             right: 8px;
+            
         }
 
         .full_heart {
-            position: absolute;
             top: 128px;
             right: 8px;
-            opacity: 0;
+          
         }
 
-        .full_heart:focus {
-            opacity: 1;
-            color: #9356DC;
-            cursor: pointer;
-        }
+      
 
 
 
@@ -775,7 +769,7 @@ footer{
 
 
 
-@media screen and (min-width: 248px){
+/* @media screen and (min-width: 248px){
     .lettre {
             color: blue;
             font-size: 12px;
@@ -783,7 +777,7 @@ footer{
             margin-bottom: 150px;
             animation: flash 1.2s linear infinite;
         }
-}
+} */
 
 
 
@@ -867,17 +861,12 @@ footer{
 }
 
 .full_heart {
-    position: absolute;
+
     top: 269px;
     right: 12px;
-    opacity: 0;
+    
 }
 
-.full_heart:focus {
-    opacity: 1;
-    color: #9356DC;
-    cursor: pointer;
-}
 
 .link_card{
     font-size: 16px;
@@ -925,17 +914,10 @@ footer{
     }
 
     .full_heart {
-        position: absolute;
         top: 375px;
         right: 12px;
-        opacity: 0;
     }
 
-    .full_heart:focus {
-        opacity: 1;
-        color: #9356DC;
-        cursor: pointer;
-    }
     
     .functionning_icon1,
     .functionning_icon2,
@@ -996,16 +978,9 @@ footer{
     }
 
     .full_heart {
-        position: absolute;
+    
         top: 472px;
         right: 12px;
-        opacity: 0;
-    }
-
-    .full_heart:focus {
-        opacity: 1;
-        color: #9356DC;
-        cursor: pointer;
     }
 
     .process{
