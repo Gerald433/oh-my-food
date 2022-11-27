@@ -76,7 +76,7 @@
 /* Logo */
 
 
-.arrow_left{
+.arrow_left {
     position: absolute;
     top: 3px;
     left: 15px;
@@ -105,12 +105,12 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: -30px;
-   
+
 
 }
 
-.menu_card{
-    background-color:#F7F7F7;
+.menu_card {
+    background-color: #F7F7F7;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: 1px;
@@ -125,10 +125,10 @@
     padding-left: 10px;
 
     margin-bottom: 20px;
-    
+
 }
 
-.heart{
+.heart {
     position: absolute;
     top: 29px;
     /* left: 238px; */
@@ -141,9 +141,10 @@
     /* left: 238px; */
     right: 20px;
     background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
-    
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
     transform: scale(0);
     transition: transform 2s;
 }
@@ -160,14 +161,14 @@
 
 }
 
-.section_subtile{
+.section_subtile {
     font-size: 14px;
     margin-left: 10px;
     margin-bottom: 4px;
     margin-top: 30px;
 }
 
-.decoration{
+.decoration {
     width: 13%;
     height: 10px;
     border-top: 2px solid #9356DC;
@@ -176,17 +177,26 @@
 
 
 
-.introduction{
-    background-color: #F7F7F7; 
+.introduction {
+    background-color: #F7F7F7;
     flex-direction: column;
     gap: 10px;
-  
-   
+
+
 }
 
 
-.A, .B, .C, .D, .E, .F, .G, .H, .I{
-animation: apparition 2s ease-in-out both;
+.A,
+.B,
+.C,
+.D,
+.E,
+.F,
+.G,
+.H,
+.I,
+.J {
+    animation: apparition 0.8s ease-in-out both;
 }
 
 
@@ -197,61 +207,74 @@ animation: apparition 2s ease-in-out both;
 }
 
 .B {
-  
+
     animation-delay: 0.3s;
- }
+}
+
 .C {
-    
+
     animation-delay: 0.6s;
 
 }
+
 .D {
 
     animation-delay: 0.9s;
 
 }
+
 .E {
- 
+
     animation-delay: 1.2s;
 
 }
+
 .F {
 
     animation-delay: 1.5s;
 
 }
+
 .G {
-    
+
     animation-delay: 1.8s;
 
 }
+
 .H {
-    
+
     animation-delay: 2.1s;
 
 }
+
 .I {
-   
+
     animation-delay: 2.4s;
-    
+
 }
 
+.J {
+
+    animation-delay: 2.7s;
+
+}
 
 
 
 @keyframes apparition {
-    0%{
+    0% {
         opacity: 0;
         /* padding-top: 10px; */
         transform: translateY(40px);
-        
-    
-    
+
+
+
     }
-    100%{
+
+    100% {
         opacity: 1;
-       
-        
+
+
 
     }
 }
@@ -260,38 +283,31 @@ animation: apparition 2s ease-in-out both;
 
 
 
-
-
-
-
-
-
-.ok{
+.ok {
     font-size: 10px;
     width: 15px;
     height: 15px;
     margin: auto;
-    align-items: center;    
+    align-items: center;
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 1s; 
+    transition-duration: 1s;
     color: #8EDECE
-    
 }
 
 
 
 
-.choice{
+.choice {
     background-color: white;
     border-radius: 10px;
     margin: 0 10px 0 10px;
     display: flex;
     overflow: hidden;
-  
+
     cursor: pointer;
     box-shadow: 2px 4px 2px #eaeaea;
 
@@ -302,11 +318,11 @@ animation: apparition 2s ease-in-out both;
     margin-right: -40px;
 }
 
-.choice:focus .slide{
-margin-right: 0px
+.choice:focus .slide {
+    margin-right: 0px
 }
 
-.choice:focus .ok{
+.choice:focus .ok {
 
     transform: rotate(360deg);
 }
@@ -323,39 +339,40 @@ margin-right: 0px
 }
 
 
-.component{
+.component {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     padding-left: 10px;
     text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-   
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
-.dish{
+.dish {
     /* font-weight: bolder; */
     font-family: 'Roboto Bold';
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px 0 0 0;
     text-overflow: ellipsis;
     overflow: hidden;
+    line-height: 20px;
 
 }
 
-.seasoning{
-    font-size: 12px;
+.seasoning {
+    font-size: 15px;
     padding: 0 0 0 0;
     height: 30px;
-   
-    
+
+
 }
 
-.price{
-    
+.price {
+
     padding-top: 29px;
     padding-right: 22px;
     top: 31px;
@@ -384,7 +401,7 @@ margin-right: 0px
     text-decoration: none;
 }
 
-.Explore:hover{
+.Explore:hover {
     filter: brightness(1.15);
     box-shadow: 5px 5px 20px #9356DC;
 }
@@ -436,16 +453,16 @@ footer {
 }
 
 .footer_links {
-   
+
     margin-top: 15px;
     padding-bottom: 15px;
-   
+
 }
 
 
 
-@media screen and (max-width: 280px){
-    .heart{
+@media screen and (max-width: 280px) {
+    .heart {
         position: absolute;
         top: 50px;
         /* left: 106px; */
@@ -454,8 +471,8 @@ footer {
     .full_heart {
         position: absolute;
         top: 50px;
-            /* left: 106px; */
-        
+        /* left: 106px; */
+
         transform: scale(0);
         transition: transform 2s;
     }
@@ -473,7 +490,7 @@ footer {
     }
 
 
-    .section_title{
+    .section_title {
         max-width: 200px;
     }
 }
@@ -482,10 +499,10 @@ footer {
 
 
 
-@media screen and (max-width: 399px){
+@media screen and (max-width: 399px) {
 
-.seasoning {
-     
+    .seasoning {
+
         padding-top: 5px;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -509,7 +526,7 @@ footer {
         font-size: 28px;
     }
 
-    .heart{
+    .heart {
         top: 32px;
         right: 34px;
         font-size: 20px;
@@ -548,19 +565,16 @@ footer {
         padding: 0px 0 0px 10px;
     }
 
-    .dish {
-        font-size: 17px;
-    }
+  
 
     .price {
         font-size: 15px;
     }
 
     .seasoning {
-        font-size: 14px;
         padding-top: 5px;
         text-overflow: ellipsis;
-        overflow: hidden;    
+        overflow: hidden;
 
     }
 
@@ -576,11 +590,12 @@ footer {
         width: 150px;
     }
 
-    .foot_link, .foot_link2 {
+    .foot_link,
+    .foot_link2 {
         font-size: 14px;
     }
 
-    .log_link{
+    .log_link {
         font-size: 14px;
     }
 
@@ -594,114 +609,114 @@ footer {
 
 @media screen and (min-width: 700px) {
     .header_logo {
-            width: 350px;
-        }
-    
-        .section_title {
-            font-size: 35px;
-            text-align: center;
-        }
-    
-        .section_subtile {
-            font-size: 22px;
-        }
+        width: 350px;
+    }
 
-        .heart {
-            top: 33px;
-            right: 90px;
-            font-size: 20px;
-        }
-        
-        .full_heart {
-            position: absolute;
-            top: 33px;
-            right: 90px;
-            font-size: 20px;
-            transform: scale(0);
-            transition: transform 2s;
-        }
+    .section_title {
+        font-size: 35px;
+        text-align: center;
+    }
 
-        .heart_gestion:hover .full_heart {
-            opacity: 1;
-            background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
+    .section_subtile {
+        font-size: 22px;
+    }
 
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            cursor: pointer;
-            transform: scale(1);
+    .heart {
+        top: 33px;
+        right: 90px;
+        font-size: 20px;
+    }
 
-        }
-    
-        .choice {
-            margin: 0 50px 0 50px;
-            /* padding: 10px 0 10px 10px; */
-        }
-    
-        .dish {
-            font-size: 22px;
-        }
-    
-        .price {
-            font-size: 17px;
-        }
-    
-        .seasoning {
-            font-size: 16px;
-        }
-    
-        .picture {
-            height: 300px;
-        }
-    
-        .Explore {
-            font-size: 16px;
-        }
+    .full_heart {
+        position: absolute;
+        top: 33px;
+        right: 90px;
+        font-size: 20px;
+        transform: scale(0);
+        transition: transform 2s;
+    }
 
-        footer {
-            background-color: #353535;
-            color: white;
-            padding-top: 12px;
-            padding-left: 15px;
-            line-height: 20px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
+    .heart_gestion:hover .full_heart {
+        opacity: 1;
+        background: linear-gradient(to top left, #9356DC 58%, #EA72DB);
 
-        }
-        
-    
-        .footer_logo {
-            width: 250px;
-        }
-    
-        .foot_link,
-        .foot_link2 {
-            font-size: 17px;
-        }
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        cursor: pointer;
+        transform: scale(1);
+
+    }
+
+    .choice {
+        margin: 0 50px 0 50px;
+        /* padding: 10px 0 10px 10px; */
+    }
+
+  
+
+    .price {
+        font-size: 17px;
+    }
+
+
+    .picture {
+        height: 300px;
+    }
+
+    .Explore {
+        font-size: 16px;
+    }
+
+    footer {
+        background-color: #353535;
+        color: white;
+        padding-top: 12px;
+        padding-left: 15px;
+        line-height: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .footer_logo {
+        width: 250px;
+    }
+
+    .foot_link,
+    .foot_link2 {
+        font-size: 17px;
+    }
 }
 
 
 
 
-@media screen and (min-width: 980px){
-    .introduction{
+@media screen and (min-width: 980px) {
+
+
+
+
+
+    .introduction {
         flex-direction: row;
         justify-content: space-around;
         gap: 8px;
     }
 
-    .choice{
-       width: 32%;
-       
+    .choice {
+        width: 32%;
+
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         /* border: solid black 1px; */
         margin: 0 10px 0 10px;
     }
-    
+
     .price {
         top: 31px;
         right: 10px;
@@ -713,27 +728,10 @@ footer {
         height: 450px;
     }
 
-    .dish {
-     font-size: 22px;
-    }
 
 
 
-    .seasoning {
-        font-size: 13px;
-    }
+
+   
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
