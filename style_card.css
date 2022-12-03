@@ -318,11 +318,11 @@
     margin-right: -40px;
 }
 
-.choice:focus .slide {
+.choice:hover .slide {
     margin-right: 0px
 }
 
-.choice:focus .ok {
+.choice:hover .ok {
 
     transform: rotate(360deg);
 }
